@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+
+        System.out.print("a: ");
+        int a = iScanner.nextInt();
+
+        System.out.print("b: ");
+        int b = iScanner.nextInt();
+
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+
+        int sum = a + b;
+        int difference = a - b;
+        int dividend = a / b;
+        int product = a * b;
+
+        System.out.println("Cложение: " + sum);
+        System.out.println("Вычитание: " + difference);
+        System.out.println("Деление: " + dividend);
+        System.out.println("Умножение: " + product);
+    }
+}
