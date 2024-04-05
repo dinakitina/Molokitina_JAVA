@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class test{
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("a: ");
+        var x = iScanner.nextLine();
+        System.out.printf("b: ");
+        var y = iScanner.nextLine();
+        iScanner.close();
+        if (x.equals(y)){
+            System.out.println("Строки идентичны");
+        } else {
+            System.out.println("Строки неидентичны");
+        }
+    }
+}
